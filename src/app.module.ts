@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { MindgazeModule } from './mindgaze-test';
+import { ApiModule } from './modules/api';
+import { MindgazeModule } from './modules/mindgaze-test';
+import { UiModule } from './modules/ui';
 
 @Module({
-  imports: [MindgazeModule],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [MindgazeModule, ApiModule, UiModule],
+  controllers: [],
+  providers: [],
 })
 export class AppModule {}
