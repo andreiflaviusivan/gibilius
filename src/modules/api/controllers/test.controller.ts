@@ -1,7 +1,5 @@
 import { Controller, Get, Query } from '@nestjs/common';
 import { AppService } from '../services';
-// import { BlogCheckService } from './modules/mindgaze-test';
-// , private readonly blogTestService: BlogCheckService
 
 @Controller('api/test')
 export class TestController {

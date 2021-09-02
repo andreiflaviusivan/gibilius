@@ -2655,6 +2655,14 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
+hbs-utils@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/hbs-utils/-/hbs-utils-0.0.4.tgz#f02babf90ca12659427a831f6fc6ed09bd955a92"
+  integrity sha1-8Cur+QyhJllCeoMfb8btCb2VWpI=
+  dependencies:
+    node-watch "^0.4.1"
+    walk "^2.3.9"
+
 hbs@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/hbs/-/hbs-4.1.2.tgz#8d8c07b50d985b580a3d6eae9bf52393a47b9aaf"
@@ -3786,6 +3794,11 @@ node-releases@^1.1.75:
   version "1.1.75"
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.75.tgz#6dd8c876b9897a1b8e5a02de26afa79bb54ebbfe"
   integrity sha512-Qe5OUajvqrqDSy6wrWFmMwfJ0jVgwiw4T3KqmbTcZ62qW0gQkheXYhcFM1+lOVcGUoRxcEcfyvFMAnDgaF1VWw==
+
+node-watch@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/node-watch/-/node-watch-0.4.1.tgz#d0947d54a995f91135db4056b68722c6d7c322ad"
+  integrity sha1-0JR9VKmV+RE120BWtocixtfDIq0=
 
 normalize-path@^3.0.0, normalize-path@~3.0.0:
   version "3.0.0"
@@ -4976,7 +4989,7 @@ w3c-xmlserializer@^2.0.0:
   dependencies:
     xml-name-validator "^3.0.0"
 
-walk@2.3.14:
+walk@2.3.14, walk@^2.3.9:
   version "2.3.14"
   resolved "https://registry.yarnpkg.com/walk/-/walk-2.3.14.tgz#60ec8631cfd23276ae1e7363ce11d626452e1ef3"
   integrity sha512-5skcWAUmySj6hkBdH6B6+3ddMjVQYH5Qy9QGbPmN8kVmLteXk+yVXg+yfk1nbX30EYakahLrr8iPcCxJQSCBeg==
