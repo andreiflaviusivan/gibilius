@@ -12,5 +12,5 @@ $split = $(pwd).Path.Split('/')
 $app = $split[$split.Length - 1]
 
 ssh -i ./ssh-keys/id_rsa pi@$ip "mkdir -p $location/$app"
-scp -i ./ssh-keys/id_rsa -r pi@$ip ./dist ./views ./public *.json *.lock  *.sh "pi@${ip}:~/$location/$app"
+scp -i ./ssh-keys/id_rsa -r pi@$ip ./conf ./dist ./views ./public *.json *.lock  *.sh "pi@${ip}:~/$location/$app"
 ssh -i ./ssh-keys/id_rsa pi@$ip "cd $location/$app; yarn; pm2 restart gibilius && pm2 save"

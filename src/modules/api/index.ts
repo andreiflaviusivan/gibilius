@@ -3,12 +3,12 @@ import { TestController } from './controllers';
 import { AppService } from './services';
 
 @Module({
-    imports: [
-    ],
-    controllers:[
-        TestController
-    ],
-    providers: [AppService],
-    exports: [],
+  imports: [
+  ],
+  controllers: [
+    TestController
+  ],
+  providers: [AppService],
+  exports: [],
 })
-export class ApiModule {}
+export class ApiModule { }
