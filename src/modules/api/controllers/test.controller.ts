@@ -2,7 +2,7 @@ import { Controller, Get, Query } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { AppService } from '../services';
 
-@Controller('api/test')
+@Controller('test')
 export class TestController {
   constructor(private readonly appService: AppService, private readonly config: ConfigService) {}
 
