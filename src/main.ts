@@ -3,6 +3,7 @@ import { Logger } from '@nestjs/common';
 import { AppModule } from './app.module';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
+import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import * as hbs from 'hbs';
 import * as hbsrawutils from 'hbs-utils';
 
@@ -27,6 +28,14 @@ async function bootstrap() {
     onchange: (template) => logger.log(`Changed template ${template}`),
     precompile: true,
   });
+
+  const config = new DocumentBuilder()
+    .setTitle('Gibilius API')
+    .setDescription('API description')
+    .setVersion('1.0')
+    .build();
+  const document = SwaggerModule.createDocument(app, config);
+  SwaggerModule.setup('swagger', app, document);
 
   await app.listen(3000);
 }
