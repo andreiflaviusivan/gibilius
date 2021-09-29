@@ -10,14 +10,15 @@ export class BlogCheckService {
 
     constructor() {
         this.http = axios.create({
-            baseURL: 'https://blog.mindgaze.tech',
+            baseURL: 'https://afivan.com',
             headers: { 'Content-Type': 'application/json' },
         });
     }
 
-    @Interval(60000)
+    // @Interval(60000)
     public async invokeHeartbeat() {
-        this.logger.log(`Invoking blog # ${this.heartbeat++}`);
+        this.logger.log(`Invoking interval # ${this.heartbeat++}`);
+
         const pages = [
             `?reqNr=${this.heartbeat}`,
             'category/development/aspnetcore-library/',
