@@ -1,4 +1,4 @@
 #!/bin/bash
-export NODE_ENV=production
+export APP_ENVIRONMENT=prod
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 node $SCRIPT_DIR/dist/main

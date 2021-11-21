@@ -3,5 +3,5 @@ export class TestDto {
     birth: Date;
     major: boolean;
     id: string;
-    get collectionName() { return "TestDtos";}
+    // get collectionName() { return "TestDtos";}
 }

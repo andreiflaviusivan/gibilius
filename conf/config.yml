@@ -17,4 +17,4 @@ db:
 
   raven:
     database: 'Gibilius'
-    url: 'http://192.168.0.129:8008/'
+    url: 'http://localhost:8080/'

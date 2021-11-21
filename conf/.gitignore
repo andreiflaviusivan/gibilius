@@ -1,3 +1,5 @@
 config.prod.yml
 config.stag.yml
 config.test.yml
+
+*.pfx
